@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <!-- Build and Core -->
+  <remove-project name="platform/art" />
+  <project path="art" name="android_art" remote="zephyrus" />
+  <remove-project name="platform/bionic" />
+  <project path="bionic" name="android_bionic" remote="zephyrus" />
+  <remove-project name="platform/build_repo" />
+  <project path="build/make" name="android_build" remote="zephyrus" >
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+  </project>
+  <remove-project name="platform/build/soong" />
+  <project path="build/soong" name="android_build_soong" remote="zephyrus" >
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
+
+  <!-- Bootable -->
+  <remove-project name="platform/bootable/recovery" />
+  <project path="bootable/recovery" name="android_bootable_recovery" remote="zephyrus" />
+
+  <!-- Device -->
+  <remove-project name="device/qcom/common" />
+  <project path="device/qcom/common" name="android_device_qcom_common" remote="zephyrus" >
+    <linkfile dest="vendor/qcom/build/tasks/generate_extra_images.mk" src="generate_extra_images.mk"/>
+  </project>
+  <remove-project name="device/qcom/qssi" />
+  <project path="device/qcom/qssi" name="android_device_qcom_qssi" remote="zephyrus" />
+  <remove-project name="device/qcom/sepolicy" />
+  <project path="device/qcom/sepolicy" name="android_device_qcom_sepolicy" remote="zephyrus" />
+  <remove-project name="device/qcom/sepolicy_vndr" />
+  <project path="device/qcom/sepolicy_vndr" name="android_device_qcom_sepolicy_vndr" remote="zephyrus" />
+  <remove-project name="device/qcom/vendor-common" />
+  <project path="device/qcom/vendor-common" name="android_device_qcom_vendor-common" remote="zephyrus" />
+  <project path="device/qcom/kernelscripts" name="android_device_qcom_kernelscripts" remote="zephyrus" >
+    <linkfile dest="vendor/qcom/build/tasks/kernel_definitions.mk" src="kernel_definitions.mk"/>
+  </project>
+
+  <!-- External -->
+  <project path="external/android-nn-driver" name="android_external_android-nn-driver" remote="zephyrus" />
+  <project path="external/armnn" name="android_external_armnn" remote="zephyrus" />
+  <remove-project name="platform/external/arm-optimized-routines" />
+  <project path="external/arm-optimized-routines" name="android_external_arm-optimized-routines" remote="zephyrus" />
+  <remove-project name="platform/external/fastrpc" />
+  <project path="external/fastrpc" name="android_external_fastrpc" remote="zephyrus" />
+  <remove-project name="platform/external/libjpeg-turbo" />
+  <project path="external/libjpeg-turbo" name="android_external_libjpeg-turbo" remote="zephyrus" />
+  <remove-project name="platform/external/libpng" />
+  <project path="external/libpng" name="android_external_libpng" remote="zephyrus" />
+  <remove-project name="platform/external/skia" />
+  <project path="external/skia" name="android_external_skia" remote="zephyrus" />
+  <remove-project name="platform/external/sqlite" />
+  <project path="external/sqlite" name="android_external_sqlite" remote="zephyrus" />
+  <remove-project name="platform/external/tinycompress" />
+  <project path="external/tinycompress" name="android_external_tinycompress" remote="zephyrus" />
+  <remove-project name="platform/external/wpa_supplicant_8" />
+  <project path="external/wpa_supplicant_8" name="android_external_wpa_supplicant_8" remote="zephyrus" />
+  <remove-project name="platform/external/zlib" />
+  <project path="external/zlib" name="android_external_zlib" remote="zephyrus" />
+
+  <!-- Frameworks -->
+  <remove-project name="platform/frameworks/av" />
+  <project path="frameworks/av" name="android_frameworks_av" remote="zephyrus" />
+  <remove-project name="platform/frameworks/base" />
+  <project path="frameworks/base" name="android_frameworks_base" remote="zephyrus" />
+  <remove-project name="platform/frameworks/native" />
+  <project path="frameworks/native" name="android_frameworks_native" remote="zephyrus" />
+  <remove-project name="platform/frameworks/opt/net/ims" />
+  <project path="frameworks/opt/net/ims" name="android_frameworks_opt_net_ims" remote="zephyrus" />
+  <remove-project name="platform/frameworks/opt/net/wifi" />
+  <project path="frameworks/opt/net/wifi" name="android_frameworks_opt_net_wifi" remote="zephyrus" />
+  <remove-project name="platform/frameworks/opt/telephony" />
+  <project path="frameworks/opt/telephony" name="android_frameworks_opt_telephony" remote="zephyrus" />
+  <remove-project name="platform/frameworks/proto_logging" />
+  <project path="frameworks/proto_logging" name="android_frameworks_proto_logging" remote="zephyrus" />
+
+  <!-- Hardware -->
+  <remove-project name="platform/hardware/interfaces" />
+  <project path="hardware/interfaces" name="android_hardware_interfaces" remote="zephyrus" />
+  <remove-project name="platform/hardware/libhardware" />
+  <project path="hardware/libhardware" name="android_hardware_libhardware" remote="zephyrus" />
+  <remove-project name="platform/hardware/st/nfc" />
+  <project path="hardware/st/nfc" name="android_hardware_st_nfc" remote="zephyrus" />
+
+  <!-- Manifest -->
+  <project path="manifest" name="android_manifest" remote="zephyrus" />
+
+  <!-- Packages -->
+  <remove-project name="platform/packages/apps/CarrierConfig" />
+  <project path="packages/apps/CarrierConfig" name="android_packages_apps_CarrierConfig" remote="zephyrus" />
+  <remove-project name="platform/packages/apps/Nfc" />
+  <project path="packages/apps/Nfc" name="android_packages_apps_Nfc" remote="zephyrus" />
+  <remove-project name="platform/packages/apps/Settings" />
+  <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="zephyrus" />
+  <remove-project name="platform/packages/modules/Bluetooth" />
+  <project path="packages/modules/Bluetooth" name="android_packages_modules_Bluetooth" remote="zephyrus" />
+  <remove-project name="platform/packages/modules/common" />
+  <project path="packages/modules/common" name="android_packages_modules_common" remote="zephyrus" />
+  <remove-project name="platform/packages/modules/Connectivity" />
+  <project path="packages/modules/Connectivity" name="android_packages_modules_Connectivity" remote="zephyrus" />
+  <remove-project name="platform/packages/modules/Wifi" />
+  <project path="packages/modules/Wifi" name="android_packages_modules_Wifi" remote="zephyrus" />
+  <remove-project name="platform/packages/providers/TelephonyProvider" />
+  <project path="packages/providers/TelephonyProvider" name="android_packages_providers_TelephonyProvider" remote="zephyrus" />
+  <remove-project name="platform/packages/services/Telecomm" />
+  <project path="packages/services/Telecomm" name="android_packages_services_Telecomm" remote="zephyrus" />
+  <remove-project name="platform/packages/services/Telephony" />
+  <project path="packages/services/Telephony" name="android_packages_services_Telephony" remote="zephyrus" />
+
+  <!-- Repainter (kdrag0n) -->
+  <project path="packages/apps/RepainterServicePriv" name="kdrag0n/android_packages_apps_RepainterServicePriv" remote="github" revision="main" />
+
+  <!-- System -->
+  <remove-project name="platform/system/connectivity/wificond" />
+  <project path="system/connectivity/wificond" name="android_system_connectivity_wificond" remote="zephyrus" />
+  <remove-project name="platform/system/core" />
+  <project path="system/core" name="android_system_core" remote="zephyrus" />
+  <remove-project name="platform/system/chre" />
+  <project path="system/chre" name="android_system_chre" remote="zephyrus" />
+  <remove-project name="platform/system/keymaster" />
+  <project path="system/keymaster" name="android_system_keymaster" remote="zephyrus" />
+  <remove-project name="platform/system/media" />
+  <project path="system/media" name="android_system_media" remote="zephyrus" />
+  <remove-project name="platform/system/memory/lmkd" />
+  <project path="system/memory/lmkd" name="android_system_memory_lmkd" remote="zephyrus" />
+  <remove-project name="platform/system/netd" />
+  <project path="system/netd" name="android_system_netd" remote="zephyrus" />
+  <remove-project name="platform/system/security" />
+  <project path="system/security" name="android_system_security" remote="zephyrus" />
+  <remove-project name="platform/system/sepolicy" />
+  <project path="system/sepolicy" name="android_system_sepolicy" remote="zephyrus" />
+  <remove-project name="platform/system/update_engine" />
+  <project path="system/update_engine" name="android_system_update_engine" remote="zephyrus" />
+  <remove-project name="platform/system/vold" />
+  <project path="system/vold" name="android_system_vold" remote="zephyrus" />
+
+  <!-- Vendor (zephyrus) -->
+  <project path="vendor/zephyrus" name="android_vendor_zephyrus" remote="zephyrus" >
+    <linkfile src="build.sh" dest="rom-build.sh" />
+  </project>
+  <project path="vendor/qcom/common" name="proprietary_vendor_qcom_common" remote="zephyrus" />
+  <project path="vendor/google/gms" name="android_vendor_google_gms" remote="blobs-gitlab" />
+  <project path="vendor/google/pixel" name="android_vendor_google_pixel" remote="blobs" />
+  <project path="vendor/qcom/sdclang" name="proprietary_vendor_qcom_sdclang" remote="blobs" revision="disabled" />
+
+  <!-- Vendor (QCOM) -->
+  <remove-project name="platform/vendor/nxp/opensource/packages/apps/Nfc" />
+  <project path="vendor/nxp/opensource/commonsys/packages/apps/Nfc" name="android_vendor_nxp_opensource_packages_apps_Nfc" remote="zephyrus" />
+  <remove-project name="platform/vendor/qcom-opensource/bluetooth-commonsys-intf" />
+  <project path="vendor/qcom/opensource/commonsys-intf/bluetooth" name="android_vendor_qcom-opensource_bluetooth-commonsys-intf" remote="zephyrus" />
+  <remove-project name="platform/vendor/qcom-opensource/display-commonsys-intf" />
+  <project path="vendor/qcom/opensource/commonsys-intf/display" name="android_vendor_qcom_opensource_commonsys-intf_display" remote="zephyrus" >
+    <linkfile dest="vendor/qcom/defs/product-defs/system/display-product-system.mk" src="config/display-product-system.mk" />
+    <linkfile dest="vendor/qcom/defs/product-defs/vendor/display-interfaces-product.mk" src="config/display-interfaces-product.mk" />
+  </project>
+  <project path="vendor/qcom/opensource/commonsys-intf/wfd" name="android_vendor_qcom_opensource_commonsys-intf_wfd" remote="zephyrus" />
+  <remove-project name="platform/vendor/qcom-opensource/display-commonsys" />
+  <project path="vendor/qcom/opensource/commonsys/display" name="android_vendor_qcom-opensource_display-commonsys" remote="zephyrus" />
+  <remove-project name="platform/vendor/qcom-opensource/data-ipa-cfg-mgr" />
+  <project path="vendor/qcom/opensource/data-ipa-cfg-mgr" name="android_vendor_qcom_opensource_data-ipa-cfg-mgr" remote="zephyrus" />
+  <project path="vendor/qcom/opensource/data-ipa-cfg-mgr-legacy" name="android_vendor_qcom_opensource_data-ipa-cfg-mgr" remote="zephyrus" revision="tm-legacy" />
+  <remove-project name="platform/vendor/qcom-opensource/lights" />
+  <project path="vendor/qcom/opensource/lights" name="android_vendor_qcom_opensource_lights" remote="zephyrus" />
+  <remove-project name="platform/vendor/qcom-opensource/power" />
+  <project path="vendor/qcom/opensource/power" name="android_vendor_qcom-opensource_power" remote="zephyrus" />
+  <remove-project name="platform/vendor/qcom-opensource/packages/apps/Bluetooth" />
+  <project path="vendor/qcom/opensource/commonsys/packages/apps/Bluetooth" name="android_vendor_qcom-opensource_packages_apps_Bluetooth" remote="zephyrus" />
+  <remove-project name="platform/vendor/qcom-opensource/system/bt" />
+  <project path="vendor/qcom/opensource/commonsys/system/bt" name="android_vendor_qcom_opensource_commonsys_system_bt" remote="zephyrus" />
+  <remove-project name="platform/vendor/qcom-opensource/vibrator" />
+  <project path="vendor/qcom/opensource/vibrator" name="android_vendor_qcom-opensource_vibrator" remote="zephyrus" />
+  <remove-project name="platform/vendor/qcom-opensource/usb" />
+  <project path="vendor/qcom/opensource/usb" name="android_vendor_qcom-opensource_usb" remote="zephyrus" />
+  
+</manifest>

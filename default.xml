@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <!-- AOSP -->
+  <remote name="aosp"
+          fetch="https://android.googlesource.com"
+          sync-c="true"
+          sync-tags="false"
+          review="https://android-review.googlesource.com/"
+          revision="refs/tags/android-13.0.0_r23"/>
+
+  <!-- CLO -->
+  <remote name="clo_system"
+          fetch="https://git.codelinaro.org/clo/la"
+          sync-c="true"
+          sync-tags="false"
+          review="codelinaro.org"/>
+
+  <remote name="clo_vendor"
+          fetch="https://git.codelinaro.org/clo/la"
+          sync-c="true"
+          sync-tags="false"
+          review="codelinaro.org"
+          revision="refs/tags/LA.VENDOR.1.0.r1-19800-WAIPIO.QSSI13.0"/>
+
+  <default revision="refs/tags/LA.QSSI.13.0.r1-08600.01-qssi.0"
+           remote="clo_system"/>
+
+  <include name="system.xml"/>
+  <include name="vendor.xml"/>
+  
+  <!-- Project-Zephyrus -->
+  <remote  name="blobs"
+           fetch="https://github.com/ThankYouMario"
+           revision="topaz" />
+
+  <remote  name="blobs-gitlab"
+           fetch="https://gitlab.com/ThankYouMario"
+           revision="topaz" />
+
+  <remote  name="github"
+           fetch="https://github.com" />
+
+  <remote  name="github-ssh"
+           fetch="ssh://git@github.com" />
+
+  <remote  name="gitlab"
+           fetch="https://gitlab.com" />
+           
+  <remote  name="zephyrus"
+           fetch="https://github.com/Project-Zephyrus-CAF"
+           revision="refs/heads/tm" />
+
+  <include name="snippets/aosp.xml"/>
+  <include name="snippets/remove.xml"/>
+  <include name="snippets/lineage.xml"/>
+  <include name="snippets/zephyrus.xml"/>
+  
+</manifest>
+  
+  
