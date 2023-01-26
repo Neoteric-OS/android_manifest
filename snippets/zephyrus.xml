@@ -176,6 +176,8 @@
   <project path="vendor/qcom/opensource/data-ipa-cfg-mgr-legacy" name="android_vendor_qcom_opensource_data-ipa-cfg-mgr" remote="zephyrus" revision="tm-legacy" />
   <remove-project name="platform/vendor/qcom-opensource/lights" />
   <project path="vendor/qcom/opensource/lights" name="android_vendor_qcom_opensource_lights" remote="zephyrus" />
+  <remove-project name="platform/vendor/qcom-opensource/interfaces" />
+  <project path="vendor/qcom/opensource/interfaces" name="android_vendor_qcom-opensource_interfaces" remote="zephyrus" />
   <remove-project name="platform/vendor/qcom-opensource/power" />
   <project path="vendor/qcom/opensource/power" name="android_vendor_qcom-opensource_power" remote="zephyrus" />
   <remove-project name="platform/vendor/qcom-opensource/packages/apps/Bluetooth" />
