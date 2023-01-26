@@ -113,6 +113,7 @@
   <project path="packages/services/Telecomm" name="android_packages_services_Telecomm" remote="zephyrus" />
   <remove-project name="platform/packages/services/Telephony" />
   <project path="packages/services/Telephony" name="android_packages_services_Telephony" remote="zephyrus" />
+  <project path="packages/apps/TouchGestures" name="android_packages_apps_TouchGestures" remote="zephyrus" />
 
   <!-- Repainter (kdrag0n) -->
   <project path="packages/apps/RepainterServicePriv" name="kdrag0n/android_packages_apps_RepainterServicePriv" remote="github" revision="main" />
