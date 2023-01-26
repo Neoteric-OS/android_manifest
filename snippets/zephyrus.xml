@@ -41,6 +41,7 @@
   <project path="device/qcom/kernelscripts" name="android_device_qcom_kernelscripts" remote="zephyrus" >
     <linkfile dest="vendor/qcom/build/tasks/kernel_definitions.mk" src="kernel_definitions.mk"/>
   </project>
+  <project path="device/zephyrus/sepolicy" name="android_device_zephyrus_sepolicy" remote="zephyrus" />
 
   <!-- External -->
   <project path="external/android-nn-driver" name="android_external_android-nn-driver" remote="zephyrus" />
@@ -144,7 +145,6 @@
   <project path="vendor/zephyrus" name="android_vendor_zephyrus" remote="zephyrus" />
   <project path="vendor/qcom/common" name="proprietary_vendor_qcom_common" remote="zephyrus" />
   <project path="vendor/google/gms" name="android_vendor_google_gms" remote="blobs-gitlab" />
-  <project path="vendor/google/pixel" name="android_vendor_google_pixel" remote="blobs" />
   <project path="vendor/qcom/sdclang" name="proprietary_vendor_qcom_sdclang" remote="blobs" revision="disabled" />
 
   <!-- Vendor (QCOM) -->

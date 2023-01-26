@@ -35,8 +35,8 @@
            revision="topaz" />
 
   <remote  name="blobs-gitlab"
-           fetch="https://gitlab.com/ThankYouMario"
-           revision="topaz" />
+           fetch="https://gitlab.com/HELLBOY017"
+           revision="tm" />
 
   <remote  name="github"
            fetch="https://github.com" />
