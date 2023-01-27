@@ -114,6 +114,10 @@
   <remove-project name="platform/packages/services/Telephony" />
   <project path="packages/services/Telephony" name="android_packages_services_Telephony" remote="zephyrus" />
   <project path="packages/apps/TouchGestures" name="android_packages_apps_TouchGestures" remote="zephyrus" />
+  <remove-project name="platform/packages/apps/Launcher3"/>
+  <project path="packages/apps/Launcher3" name="android_packages_apps_Launcher3" remote="zephyrus" />
+  <remove-project name="platform/packages/apps/ThemePicker"/>
+  <project path="packages/apps/ThemePicker" name="android_packages_apps_ThemePicker" remote="zephyrus"/>
 
   <!-- Repainter (kdrag0n) -->
   <project path="packages/apps/RepainterServicePriv" name="kdrag0n/android_packages_apps_RepainterServicePriv" remote="github" revision="main" />
@@ -144,6 +148,8 @@
 
   <!-- Vendor (zephyrus) -->
   <project path="vendor/zephyrus" name="android_vendor_zephyrus" remote="zephyrus" />
+  <project path="vendor/support" name="android_vendor_support" remote="zephyrus" />
+  <project path="vendor/themes" name="android_vendor_themes" remote="zephyrus" />
   <project path="vendor/qcom/common" name="proprietary_vendor_qcom_common" remote="zephyrus" />
   <project path="vendor/google/gms" name="android_vendor_google_gms" remote="blobs-gitlab" />
   <project path="vendor/qcom/sdclang" name="proprietary_vendor_qcom_sdclang" remote="blobs" revision="disabled" />
