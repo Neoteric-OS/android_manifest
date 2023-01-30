@@ -72,14 +72,8 @@
   <project path="frameworks/base" name="android_frameworks_base" remote="zephyrus" />
   <remove-project name="platform/frameworks/native" />
   <project path="frameworks/native" name="android_frameworks_native" remote="zephyrus" />
-  <remove-project name="platform/frameworks/opt/net/ims" />
-  <project path="frameworks/opt/net/ims" name="android_frameworks_opt_net_ims" remote="zephyrus" />
-  <remove-project name="platform/frameworks/opt/net/wifi" />
-  <project path="frameworks/opt/net/wifi" name="android_frameworks_opt_net_wifi" remote="zephyrus" />
   <remove-project name="platform/frameworks/opt/telephony" />
   <project path="frameworks/opt/telephony" name="android_frameworks_opt_telephony" remote="zephyrus" />
-  <remove-project name="platform/frameworks/proto_logging" />
-  <project path="frameworks/proto_logging" name="android_frameworks_proto_logging" remote="zephyrus" />
   <remove-project name="platform/frameworks/libs/systemui" />
   <project path="frameworks/libs/systemui" name="android_frameworks_libs_systemui" remote="zephyrus" />
 
@@ -103,8 +97,6 @@
   <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="zephyrus" />
   <remove-project name="platform/packages/modules/Bluetooth" />
   <project path="packages/modules/Bluetooth" name="android_packages_modules_Bluetooth" remote="zephyrus" />
-  <remove-project name="platform/packages/modules/common" />
-  <project path="packages/modules/common" name="android_packages_modules_common" remote="zephyrus" />
   <remove-project name="platform/packages/modules/Connectivity" />
   <project path="packages/modules/Connectivity" name="android_packages_modules_Connectivity" remote="zephyrus" />
   <remove-project name="platform/packages/modules/Wifi" />
@@ -129,24 +121,14 @@
   <project path="system/connectivity/wificond" name="android_system_connectivity_wificond" remote="zephyrus" />
   <remove-project name="platform/system/core" />
   <project path="system/core" name="android_system_core" remote="zephyrus" />
-  <remove-project name="platform/system/chre" />
-  <project path="system/chre" name="android_system_chre" remote="zephyrus" />
-  <remove-project name="platform/system/keymaster" />
-  <project path="system/keymaster" name="android_system_keymaster" remote="zephyrus" />
-  <remove-project name="platform/system/media" />
-  <project path="system/media" name="android_system_media" remote="zephyrus" />
   <remove-project name="platform/system/memory/lmkd" />
   <project path="system/memory/lmkd" name="android_system_memory_lmkd" remote="zephyrus" />
-  <remove-project name="platform/system/netd" />
-  <project path="system/netd" name="android_system_netd" remote="zephyrus" />
   <remove-project name="platform/system/security" />
   <project path="system/security" name="android_system_security" remote="zephyrus" />
   <remove-project name="platform/system/sepolicy" />
   <project path="system/sepolicy" name="android_system_sepolicy" remote="zephyrus" />
   <remove-project name="platform/system/update_engine" />
   <project path="system/update_engine" name="android_system_update_engine" remote="zephyrus" />
-  <remove-project name="platform/system/vold" />
-  <project path="system/vold" name="android_system_vold" remote="zephyrus" />
 
   <!-- Vendor (zephyrus) -->
   <project path="vendor/zephyrus" name="android_vendor_zephyrus" remote="zephyrus" />
