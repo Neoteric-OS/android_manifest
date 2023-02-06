@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <remote  name="arrow"
+           fetch="https://github.com/ArrowOS"
+           review="https://review.arrowos.net/"
+           revision="refs/heads/arrow-13.0" />
+           
+  <project path="external/e2fsprogs" name="android_external_e2fsprogs" remote="arrow" />
+  <project path="external/f2fs-tools" name="android_external_f2fs-tools" remote="arrow" />
+  <project path="external/gptfdisk" name="android_external_gptfdisk" remote="arrow" />
+  <project path="external/mksh" name="android_external_mksh" remote="arrow" />
+  <project path="external/ntfs-3g" name="android_external_ntfs-3g" remote="arrow" />
+  
+  
+</manifest>

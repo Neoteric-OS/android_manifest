@@ -30,6 +30,12 @@
   <remove-project name="device/qcom/qssi_32"/>
   <remove-project name="device/qcom/qssi_32go"/>
   <remove-project name="device/sample"/>
+  
+  <!-- External -->
+  <remove-project name="platform/external/e2fsprogs" />
+  <remove-project name="platform/external/f2fs-tools" />
+  <remove-project name="platform/external/gptfdisk" />
+  <remove-project name="platform/external/mksh" />
 
   <!-- Hardware (NXP) -->
   <remove-project name="platform/hardware/nxp/nfc" />
