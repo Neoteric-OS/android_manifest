@@ -181,4 +181,7 @@
   <remove-project name="platform/vendor/qcom-opensource/usb" />
   <project path="vendor/qcom/opensource/usb" name="android_vendor_qcom-opensource_usb" remote="zephyrus" />
   
+  <!-- OTA -->
+  <project path="ota" name="OTA" remote="zephyrus" revision="13.2" />
+  
 </manifest>
