@@ -121,6 +121,7 @@
   <project path="packages/services/VncFlinger" name="android_packages_services_VncFlinger" remote="zephyrus" />
   <project path="packages/apps/FaceUnlockService" name="android_packages_apps_FaceUnlockService" remote="zephyrus" />
   <project path="packages/apps/GameSpace" name="android_packages_apps_GameSpace" remote="zephyrus" />
+  <project path="packages/apps/Updates" name="android_packages_apps_Updates" remote="zephyrus" />
 
   <!-- Repainter (kdrag0n) -->
   <project path="packages/apps/RepainterServicePriv" name="kdrag0n/android_packages_apps_RepainterServicePriv" remote="github" revision="main" />
