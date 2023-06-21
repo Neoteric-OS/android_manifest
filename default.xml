@@ -7,7 +7,7 @@
           sync-c="true"
           sync-tags="false"
           review="https://android-review.googlesource.com/"
-          revision="refs/tags/android-13.0.0_r23"/>
+          revision="refs/tags/android-13.0.0_r52"/>
 
   <!-- CLO -->
   <remote name="clo"
@@ -43,11 +43,19 @@
            fetch="https://github.com/Project-Zephyrus-CAF"
            revision="refs/heads/tm" />
 
-  <include name="snippets/aosp.xml"/>
+  <include name="aosp.xml"/>
   <include name="snippets/remove.xml"/>
   <include name="snippets/lineage.xml"/>
   <include name="snippets/arrow.xml"/>
   <include name="snippets/zephyrus.xml"/>
+  
+  <!-- AOSPA -->
+  <remote  name="aospa"
+           fetch=".."
+           review="gerrit.aospa.co"
+           revision="topaz"/>
+
+  <include name="snippets/aospa.xml"/>
   
 </manifest>
   
