@@ -8,11 +8,11 @@ First, make sure you have an [Android build environment](https://source.android.
 
 Initialize local repository:
 ```
-repo init -u https://github.com/Project-Zephyrus-CAF/android_manifest -b tm
+repo init -u https://github.com/Project-Zephyrus-CAF/android_manifest -b tm-wip
 ```
 Alternateively, shallow clone everything to save a lot of space,
 ```
-repo init --depth=1 -u https://github.com/Project-Zephyrus-CAF/android_manifest -b tm
+repo init --depth=1 -u https://github.com/Project-Zephyrus-CAF/android_manifest -b tm-wip
 ```
 
 Then sync:
@@ -29,6 +29,6 @@ This is a large download that will take approximately 100 GB of disk space, so p
 
 ## Building
 
-You will need to create a device tree to build this ROM for your device. Below are some examples that have been customized to work well with Project-Zephyrus.
+You will need to create a device tree to build this ROM for your device. Make your own you lazy twat.
 
 Good luck!
