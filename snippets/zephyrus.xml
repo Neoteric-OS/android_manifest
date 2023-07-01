@@ -18,17 +18,8 @@
 
   <!-- Device -->
   <remove-project name="device/qcom/common" />
-  <project path="device/qcom/common" name="android_device_qcom_common" remote="zephyrus" >
+  <project path="device/qcom/common" name="android_device_qcom_common" remote="zephyrus" revision="tm-wip" >
     <linkfile dest="vendor/qcom/build/tasks/generate_extra_images.mk" src="generate_extra_images.mk"/>
-  </project>
-  <remove-project name="device/qcom/sepolicy" />
-  <project path="device/qcom/sepolicy" name="android_device_qcom_sepolicy" remote="zephyrus" />
-  <remove-project name="device/qcom/sepolicy_vndr" />
-  <project path="device/qcom/sepolicy_vndr" name="android_device_qcom_sepolicy_vndr" remote="zephyrus" />
-  <remove-project name="device/qcom/vendor-common" />
-  <project path="device/qcom/vendor-common" name="android_device_qcom_vendor-common" remote="zephyrus" />
-  <project path="device/qcom/kernelscripts" name="android_device_qcom_kernelscripts" remote="zephyrus" >
-    <linkfile dest="vendor/qcom/build/tasks/kernel_definitions.mk" src="kernel_definitions.mk"/>
   </project>
   <project path="device/zephyrus/sepolicy" name="android_device_zephyrus_sepolicy" remote="zephyrus" />
 
@@ -84,36 +75,12 @@
   <project path="vendor/zephyrus" name="android_vendor_zephyrus" remote="zephyrus" revision="tm-wip" />
   <project path="vendor/support" name="android_vendor_support" remote="zephyrus" />
   <project path="vendor/themes" name="android_vendor_themes" remote="zephyrus" />
-  <project path="vendor/qcom/common" name="proprietary_vendor_qcom_common" remote="zephyrus" />
   <project path="vendor/google/gms" name="android_vendor_google_gms" remote="blobs-gitlab" />
   <project path="vendor/qcom/sdclang" name="proprietary_vendor_qcom_sdclang" remote="blobs" revision="disabled" />
 
   <!-- Vendor (QCOM) -->
-  <remove-project name="platform/vendor/nxp/opensource/packages/apps/Nfc" />
-  <project path="vendor/nxp/opensource/commonsys/packages/apps/Nfc" name="android_vendor_nxp_opensource_packages_apps_Nfc" remote="zephyrus" />
-  <remove-project name="platform/vendor/nxp/opensource/external/libnfc-nci" />
-  <project path="vendor/nxp/opensource/commonsys/external/libnfc-nci" name="android_vendor_nxp_opensource_external_libnfc-nci" remote="zephyrus" />
-  <remove-project name="platform/vendor/qcom-opensource/display-commonsys-intf" />
-  <project path="vendor/qcom/opensource/commonsys-intf/display" name="android_vendor_qcom_opensource_commonsys-intf_display" remote="zephyrus" >
-    <linkfile dest="vendor/qcom/defs/product-defs/system/display-product-system.mk" src="config/display-product-system.mk" />
-    <linkfile dest="vendor/qcom/defs/product-defs/vendor/display-interfaces-product.mk" src="config/display-interfaces-product.mk" />
-  </project>
-  <project path="vendor/qcom/opensource/commonsys-intf/wfd" name="android_vendor_qcom_opensource_commonsys-intf_wfd" remote="zephyrus" />
-  <remove-project name="platform/vendor/qcom-opensource/display-commonsys" />
-  <project path="vendor/qcom/opensource/commonsys/display" name="android_vendor_qcom-opensource_display-commonsys" remote="zephyrus" />
-  <remove-project name="platform/vendor/qcom-opensource/data-ipa-cfg-mgr" />
-  <project path="vendor/qcom/opensource/data-ipa-cfg-mgr" name="android_vendor_qcom_opensource_data-ipa-cfg-mgr" remote="zephyrus" />
-  <project path="vendor/qcom/opensource/data-ipa-cfg-mgr-legacy" name="android_vendor_qcom_opensource_data-ipa-cfg-mgr" remote="zephyrus" revision="tm-legacy" />
-  <remove-project name="platform/vendor/qcom-opensource/lights" />
-  <project path="vendor/qcom/opensource/lights" name="android_vendor_qcom_opensource_lights" remote="zephyrus" />
-  <remove-project name="platform/vendor/qcom-opensource/interfaces" />
-  <project path="vendor/qcom/opensource/interfaces" name="android_vendor_qcom-opensource_interfaces" remote="zephyrus" />
   <remove-project name="platform/vendor/qcom-opensource/power" />
   <project path="vendor/qcom/opensource/power" name="android_vendor_qcom-opensource_power" remote="zephyrus" />
-  <remove-project name="platform/vendor/qcom-opensource/vibrator" />
-  <project path="vendor/qcom/opensource/vibrator" name="android_vendor_qcom-opensource_vibrator" remote="zephyrus" />
-  <remove-project name="platform/vendor/qcom-opensource/usb" />
-  <project path="vendor/qcom/opensource/usb" name="android_vendor_qcom-opensource_usb" remote="zephyrus" />
   
   <!-- OTA -->
   <project path="ota" name="OTA" remote="zephyrus" revision="13.2" />
