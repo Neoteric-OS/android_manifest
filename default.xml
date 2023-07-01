@@ -51,9 +51,8 @@
   
   <!-- AOSPA -->
   <remote  name="aospa"
-           fetch=".."
-           review="gerrit.aospa.co"
-           revision="topaz"/>
+           fetch="https://github.com/AOSPA"
+           revision="refs/heads/topaz"/>
 
   <include name="snippets/aospa.xml"/>
   
