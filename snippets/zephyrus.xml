@@ -21,7 +21,9 @@
   <project path="device/qcom/common" name="android_device_qcom_common" remote="zephyrus" revision="tm-wip" >
     <linkfile dest="vendor/qcom/build/tasks/generate_extra_images.mk" src="generate_extra_images.mk"/>
   </project>
-  <project path="device/zephyrus/sepolicy" name="android_device_zephyrus_sepolicy" remote="zephyrus" revision="tm-wip" />
+  <remove-project name="device/qcom/sepolicy" />
+  <project path="device/qcom/sepolicy" name="android_device_qcom_sepolicy" remote="zephyrus" revision="tm-wip" />
+  <project path="device/zephyrus/sepolicy" name="android_device_zephyrus_sepolicy" remote="zephyrus"/>
 
   <!-- External -->
   <project path="external/tigervnc" name="android_external_tigervnc" remote="zephyrus" />
