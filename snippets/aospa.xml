@@ -109,7 +109,7 @@
   
   <!-- Vendor -->
   <project path="vendor/qcom/common" name="proprietary_vendor_qcom_common" remote="blobs" />
-  
+
   <!-- Vendor (QCOM) -->
   <remove-project name="platform/vendor/codeaurora/telephony" />
   <project path="vendor/codeaurora/commonsys/telephony" name="android_vendor_codeaurora_commonsys_telephony" remote="aospa" />
