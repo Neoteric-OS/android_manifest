@@ -54,7 +54,7 @@
            fetch="https://github.com/AOSPA"
            revision="refs/heads/topaz"/>
 
-  <include name="snippets/aospa.xml"/>
+  <include name="aospa.xml"/>
   
 </manifest>
   
