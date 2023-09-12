@@ -21,7 +21,7 @@
   <include name="system.xml"/>
   <include name="vendor.xml"/>
   
-  <!-- Project-Zephyrus -->
+  <!-- Neoteric OS -->
   <remote  name="blobs"
            fetch="https://github.com/ThankYouMario"
            revision="topaz" />
@@ -39,15 +39,15 @@
   <remote  name="gitlab"
            fetch="https://gitlab.com" />
            
-  <remote  name="zephyrus"
-           fetch="https://github.com/Project-Zephyrus-CAF"
+  <remote  name="neoteric"
+           fetch="https://github.com/Neoteric-OS"
            revision="refs/heads/tm" />
 
   <include name="aosp.xml"/>
   <include name="snippets/remove.xml"/>
   <include name="snippets/lineage.xml"/>
   <include name="snippets/arrow.xml"/>
-  <include name="snippets/zephyrus.xml"/>
+  <include name="snippets/neoteric.xml"/>
   
   <!-- AOSPA -->
   <remote  name="aospa"

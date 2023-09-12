@@ -1,6 +1,6 @@
-# Project-Zephyrus
+# Neoteric OS
 
-CodeLinaro based Project-Zephyrus is a minimal custom Android ROM focused on UI/UX and performance, with a touch of security, privacy and minimal set of features.
+CodeLinaro based Neoteric OS is a minimal custom Android ROM focused on UI/UX and performance, with a touch of security, privacy and minimal set of features.
 
 ## Getting source code
 
@@ -8,11 +8,11 @@ First, make sure you have an [Android build environment](https://source.android.
 
 Initialize local repository:
 ```
-repo init -u https://github.com/Project-Zephyrus-CAF/android_manifest -b tm-wip
+repo init -u https://github.com/Neoteric-OS/android_manifest -b tm-wip
 ```
 Alternateively, shallow clone everything to save a lot of space,
 ```
-repo init --depth=1 -u https://github.com/Project-Zephyrus-CAF/android_manifest -b tm-wip
+repo init --depth=1 -u https://github.com/Neoteric-OS/android_manifest -b tm-wip
 ```
 
 Then sync:

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <!-- Build and Core -->
+  <remove-project name="platform/build_repo" />
+  <project path="build/make" name="android_build" remote="neoteric" revision="tm-wip" >
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+  </project>
+  <remove-project name="platform/build/soong" />
+  <project path="build/soong" name="android_build_soong" remote="neoteric" revision="tm-wip" >
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
+
+  <!-- Bootable -->
+  <remove-project name="platform/bootable/recovery" />
+  <project path="bootable/recovery" name="android_bootable_recovery" remote="neoteric" />
+
+  <!-- Device -->
+  <remove-project name="device/qcom/common" />
+  <project path="device/qcom/common" name="android_device_qcom_common" remote="neoteric" revision="tm-wip" >
+    <linkfile dest="vendor/qcom/build/tasks/generate_extra_images.mk" src="generate_extra_images.mk"/>
+  </project>
+  <project path="device/neoteric/sepolicy" name="android_device_neoteric_sepolicy" remote="neoteric"/>
+
+  <!-- External -->
+  <project path="external/tigervnc" name="android_external_tigervnc" remote="neoteric" />
+  <project path="external/faceunlock" name="android_external_faceunlock" remote="neoteric" />
+
+  <!-- Frameworks -->
+  <remove-project name="platform/frameworks/av" />
+  <project path="frameworks/av" name="android_frameworks_av" remote="neoteric" revision="tm-wip" />
+  <remove-project name="platform/frameworks/base" />
+  <project path="frameworks/base" name="android_frameworks_base" remote="neoteric" revision="tm-wip" />
+  <remove-project name="platform/frameworks/native" />
+  <project path="frameworks/native" name="android_frameworks_native" remote="neoteric" revision="tm-wip" />
+  <remove-project name="platform/frameworks/libs/systemui" />
+  <project path="frameworks/libs/systemui" name="android_frameworks_libs_systemui" remote="neoteric" revision="tm-wip" />
+
+  <!-- Manifest -->
+  <project path="manifest" name="android_manifest" remote="neoteric" revision="tm-wip" />
+
+  <!-- Packages -->
+  <remove-project name="platform/packages/apps/Settings" />
+  <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="neoteric" revision="tm-wip" />
+  <project path="packages/apps/TouchGestures" name="android_packages_apps_TouchGestures" remote="neoteric" />
+  <remove-project name="platform/packages/apps/Launcher3"/>
+  <project path="packages/apps/Launcher3" name="android_packages_apps_Launcher3" remote="neoteric" revision="tm-wip" />
+  <remove-project name="platform/packages/apps/ThemePicker"/>
+  <project path="packages/apps/ThemePicker" name="android_packages_apps_ThemePicker" remote="neoteric" revision="tm-wip"/>
+  <remove-project name="platform/packages/services/Telecomm" />
+  <project path="packages/services/Telecomm" name="android_packages_services_Telecomm" remote="neoteric" revision="tm-wip" />
+  <project path="packages/apps/ProtonWallpaperStub" name="android_packages_apps_ProtonWallpaperStub" remote="neoteric" />
+  <remove-project name="platform/packages/apps/WallpaperPicker2"/>
+  <project path="packages/apps/WallpaperPicker2" name="android_packages_apps_WallpaperPicker2" remote="neoteric" revision="tm-wip" />
+  <project path="packages/apps/DesktopMode" name="android_packages_apps_DesktopMode" remote="neoteric" />
+  <project path="packages/services/VncFlinger" name="android_packages_services_VncFlinger" remote="neoteric" />
+  <project path="packages/apps/FaceUnlockService" name="android_packages_apps_FaceUnlockService" remote="neoteric" />
+  <project path="packages/apps/GameSpace" name="android_packages_apps_GameSpace" remote="neoteric" />
+  <project path="packages/apps/Updates" name="android_packages_apps_Updates" remote="neoteric" />
+  <project path="packages/apps/Aperture" name="android_packages_apps_Aperture" remote="neoteric" />
+
+  <!-- Repainter (kdrag0n) -->
+  <project path="packages/apps/RepainterServicePriv" name="kdrag0n/android_packages_apps_RepainterServicePriv" remote="github" revision="main" />
+
+  <!-- System -->
+  <remove-project name="platform/system/core" />
+  <project path="system/core" name="Neoteric OS-CAF/android_system_core" remote="github" revision="tm-wip" />
+  <remove-project name="platform/system/sepolicy" />
+  <project path="system/sepolicy" name="android_system_sepolicy" remote="neoteric" revision="tm-wip" />
+  <remove-project name="platform/system/update_engine" />
+  <project path="system/update_engine" name="android_system_update_engine" remote="neoteric" />
+
+  <!-- Vendor (neoteric) -->
+  <project path="vendor/neoteric" name="android_vendor_neoteric" remote="neoteric" />
+  <project path="vendor/support" name="android_vendor_support" remote="neoteric" />
+  <project path="vendor/themes" name="android_vendor_themes" remote="neoteric" />
+  <project path="vendor/google/pixel" name="android_vendor_google_pixel" remote="neoteric" />
+  <project path="vendor/google/gms" name="android_vendor_google_gms" remote="blobs-gitlab" />
+  <project path="vendor/qcom/sdclang" name="proprietary_vendor_qcom_sdclang" remote="blobs" revision="disabled" />
+
+  <!-- Vendor (QCOM) -->
+  <remove-project name="platform/vendor/qcom-opensource/power" />
+  <project path="vendor/qcom/opensource/power" name="android_vendor_qcom-opensource_power" remote="neoteric" />
+  
+  <!-- OTA -->
+  <project path="ota" name="OTA" remote="neoteric" revision="13.3" />
+  
+</manifest>
