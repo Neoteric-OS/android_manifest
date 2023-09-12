@@ -70,7 +70,7 @@
 
   <!-- System -->
   <remove-project name="platform/system/core" />
-  <project path="system/core" name="Neoteric OS-CAF/android_system_core" remote="github" revision="tm-wip" />
+  <project path="system/core" name="Neoteric-OS/android_system_core" remote="github" revision="tm-wip" />
   <remove-project name="platform/system/sepolicy" />
   <project path="system/sepolicy" name="android_system_sepolicy" remote="neoteric" revision="tm-wip" />
   <remove-project name="platform/system/update_engine" />
@@ -89,6 +89,6 @@
   <project path="vendor/qcom/opensource/power" name="android_vendor_qcom-opensource_power" remote="neoteric" />
   
   <!-- OTA -->
-  <project path="ota" name="OTA" remote="neoteric" revision="13.3" />
+  <project path="ota" name="OTA" remote="neoteric" revision="1.0" />
   
 </manifest>
