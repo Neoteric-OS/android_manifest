@@ -27,7 +27,7 @@
            revision="topaz" />
 
   <remote  name="blobs-gitlab"
-           fetch="https://gitlab.com/HELLBOY017"
+           fetch="https://gitlab.com/neoteric-os"
            revision="tm" />
 
   <remote  name="github"
