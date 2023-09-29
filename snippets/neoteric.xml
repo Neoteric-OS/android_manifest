@@ -82,6 +82,7 @@
   <project path="vendor/themes" name="android_vendor_themes" remote="neoteric" />
   <project path="vendor/google/pixel" name="android_vendor_google_pixel" remote="neoteric" />
   <project path="vendor/google/gms" name="android_vendor_google_gms" remote="blobs-gitlab" />
+  <project path="vendor/pixel-framework" name="vendor_pixel-framework" remote="neoteric" />
   <project path="vendor/qcom/sdclang" name="proprietary_vendor_qcom_sdclang" remote="blobs" revision="disabled" />
 
   <!-- Vendor (QCOM) -->
