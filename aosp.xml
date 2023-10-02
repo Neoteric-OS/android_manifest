@@ -41,6 +41,16 @@
   <project path="external/sl4a" name="platform/external/sl4a" remote="aosp" />
   <remove-project name="platform/external/tensorflow" />
   <project path="external/tensorflow" name="platform/external/tensorflow" remote="aosp" />
+  <remove-project name="platform/external/wpa_supplicant_8" />
+  <project path="external/wpa_supplicant_8" name="platform/external/wpa_supplicant_8" remote="aosp" />
+  <remove-project name="platform/external/libnl" />
+  <project path="external/libnl" name="platform/external/libnl" remote="aosp" />
+  <remove-project name="platform/external/boringssl" />
+  <project path="external/boringssl" name="platform/external/boringssl" remote="aosp" />
+
+  <!-- Hardware -->
+  <remove-project name="platform/hardware/qcom/wlan" />
+  <project path="hardware/qcom/wlan" name="platform/hardware/qcom/wlan" remote="aosp" />
 
   <!-- Packages -->
   <remove-project name="platform/packages/apps/EmergencyInfo" />
