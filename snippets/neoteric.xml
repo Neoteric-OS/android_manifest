@@ -90,6 +90,8 @@
   <project path="vendor/qcom/opensource/power" name="android_vendor_qcom-opensource_power" remote="neoteric" />
   <remove-project name="platform/vendor/qcom-opensource/fm-commonsys" />  
   <project path="vendor/qcom/opensource/commonsys/fm" name="android_vendor_qcom-opensource_fm-commonsys" remote="neoteric" /> 
+  <remove-project name="platform/vendor/qcom-opensource/display-commonsys" />
+  <project path="vendor/qcom/opensource/commonsys/display" name="android_vendor_qcom-opensource_display-commonsys" remote="neoteric" />
 
   <!-- OTA -->
   <project path="ota" name="OTA" remote="neoteric" revision="1.0" />
