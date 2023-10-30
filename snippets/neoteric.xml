@@ -42,6 +42,9 @@
   <remove-project name="platform/frameworks/libs/systemui" />
   <project path="frameworks/libs/systemui" name="android_frameworks_libs_systemui" remote="neoteric" revision="tm-wip" />
 
+  <!-- Hardware -->
+  <project path="hardware/lineage/compat" name="hardware_lineage_compat" remote="neoteric" />
+
   <!-- Manifest -->
   <project path="manifest" name="android_manifest" remote="neoteric" revision="tm-wip" />
 
