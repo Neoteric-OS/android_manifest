@@ -24,4 +24,15 @@
   <!-- Soundtrigger hal -->
   <project path="vendor/qcom/opensource/audio-hal/st-hal" name="android_vendor_qcom_opensource_audio-hal_st-hal" groups="qcom,lahaina" remote="lineage" />
   <project path="vendor/qcom/opensource/audio-hal/st-hal-ar" name="android_vendor_qcom_opensource_audio-hal_st-hal-ar" groups="qcom,waipio-vendor" remote="lineage" />
+
+  <!-- Nov patch -->
+  <remove-project name="platform/packages/modules/DnsResolver" />
+  <project path="packages/modules/DnsResolver" name="android_packages_modules_DnsResolver" groups="pdk-cw-fs,pdk-fs" remote="lineage" />
+  <remove-project name="platform/packages/modules/StatsD" />
+  <project path="packages/modules/StatsD" name="android_packages_modules_StatsD" groups="pdk-cw-fs,pdk-fs" remote="lineage" />
+  <remove-project name="platform/system/ca-certificates" />
+  <project path="system/ca-certificates" name="android_system_ca-certificates" groups="pdk" remote="lineage" />
+  <remove-project name="platform/packages/apps/KeyChain" />
+  <project path="packages/apps/KeyChain" name="android_packages_apps_KeyChain" groups="pdk-fs" remote="lineage"/>
+    
 </manifest>
