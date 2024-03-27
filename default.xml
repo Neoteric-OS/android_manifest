@@ -51,4 +51,14 @@
   <include name="aospa.xml"/>
   <include name="obsolete.xml"/>
 
+  <!-- Lineage -->
+  <include name="lineage.xml"/>
+
+  <!-- Neoteric -->
+  <remote  name="neoteric"
+           fetch="https://github.com/Neoteric-OS"
+           revision="refs/heads/udc" />
+
+  <include name="neoteric.xml"/>
+
 </manifest>
