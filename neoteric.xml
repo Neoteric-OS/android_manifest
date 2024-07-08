@@ -23,10 +23,6 @@
     <linkfile dest="vendor/qcom/build/tasks/generate_extra_images.mk" src="generate_extra_images.mk"/>
   </project>
 
-  <!-- Hardware -->
-  <remove-project name="platform/hardware/interfaces" />
-  <project path="hardware/interfaces" name="android_hardware_interfaces" remote="neoteric" />
-
   <!-- Manifest -->
   <project path="manifest" name="android_manifest" remote="neoteric" />
 
