@@ -14,10 +14,6 @@
   <remove-project name="platform/libcore" />
   <project path="libcore" name="AOSPA/android_libcore" remote="aospa" />
 
-  <!-- Bootable -->
-  <remove-project name="platform/bootable/recovery" />
-  <project path="bootable/recovery" name="AOSPA/android_bootable_recovery" remote="aospa" />
-
   <!-- Device -->
   <remove-project name="device/qcom/qssi" />
   <project path="device/qcom/qssi" name="AOSPA/android_device_qcom_qssi" remote="aospa" />
@@ -121,8 +117,6 @@
   <!-- System -->
   <remove-project name="platform/system/bpf" />
   <project path="system/bpf" name="AOSPA/android_system_bpf" remote="aospa" />
-  <remove-project name="platform/system/core" />
-  <project path="system/core" name="AOSPA/android_system_core" remote="aospa" />
   <remove-project name="platform/system/chre" />
   <project path="system/chre" name="AOSPA/android_system_chre" remote="aospa" />
   <remove-project name="platform/system/libsysprop" />
@@ -137,8 +131,6 @@
   <project path="system/netd" name="AOSPA/android_system_netd" remote="aospa" />
   <remove-project name="platform/system/qcom" />
   <project path="vendor/qcom/opensource/softap" name="AOSPA/android_system_qcom" remote="aospa" />
-  <remove-project name="platform/system/sepolicy" />
-  <project path="system/sepolicy" name="AOSPA/android_system_sepolicy" remote="aospa" />
   <remove-project name="platform/system/server_configurable_flags" />
   <project path="system/server_configurable_flags" name="AOSPA/android_system_server_configurable_flags" remote="aospa" />
   <remove-project name="platform/system/update_engine" />
