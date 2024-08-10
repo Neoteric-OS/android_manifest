@@ -30,8 +30,6 @@
   <!-- External -->
   <remove-project name="platform/external/gptfdisk" />
   <project path="external/gptfdisk" name="android_external_gptfdisk" remote="neoteric" />
-  <remove-project name="platform/external/mksh" />
-  <project path="external/mksh" name="android_external_mksh" remote="neoteric" />
   
   <!-- Packages -->
   <remove-project name="platform/packages/apps/Settings" />
