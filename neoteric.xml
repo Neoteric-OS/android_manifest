@@ -34,7 +34,11 @@
   <!-- Packages -->
   <remove-project name="platform/packages/apps/Settings" />
   <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="neoteric" />
-  
+
+  <!-- Modules -->
+  <remove-project name="platform/packages/modules/Bluetooth" />
+  <project path="packages/modules/Bluetooth" name="android_packages_modules_Bluetooth" remote="neoteric" />
+
   <!-- System -->
   <remove-project name="platform/system/core" />
   <project path="system/core" name="system_core" remote="neoteric" />
