@@ -16,5 +16,4 @@
   <project path="prebuilts/tools-lineage" name="android_prebuilts_tools-lineage" remote="lineage" clone-depth="1" />
   <remove-project name="platform/external/dtc" />
   <project path="external/dtc" name="android_external_dtc" groups="pdk" remote="lineage" clone-depth="1" />
-    
 </manifest>
