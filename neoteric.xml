@@ -52,6 +52,7 @@
 
   <!-- Vendor (Neoteric) -->
   <project path="vendor/neoteric" name="android_vendor_neoteric" remote="neoteric" />
+  <project path="vendor/neoteric/prebuilt" name="android_vendor_neoteric_prebuilt" remote="neoteric" />
   <project path="vendor/google/pixel" name="android_vendor_google_pixel" remote="neoteric" />
 
 </manifest>
