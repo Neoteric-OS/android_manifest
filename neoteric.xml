@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <!-- Build -->
+  <remove-project name="platform/build_repo" />
+  <project path="build/make" name="android_build" remote="neoteric" >
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+  </project>
+  <remove-project name="platform/build/release" />
+  <project path="build/release" name="android_build_release" remote="neoteric" />
+  <remove-project name="platform/build/soong" />
+  <project path="build/soong" name="android_build_soong" remote="neoteric" >
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
+
+  <!-- Core -->
+  <remove-project name="platform/art" />
+  <project path="art" name="android_art" remote="neoteric" />
+  <remove-project name="platform/bionic" />
+  <project path="bionic" name="android_bionic" remote="neoteric" />
+
+  <!-- Bootable -->
+  <project path="bootable/deprecated-ota" name="android_bootable_deprecated-ota" remote="neoteric" />
+  <remove-project name="platform/bootable/recovery" />
+  <project path="bootable/recovery" name="android_bootable_recovery" remote="neoteric" />
+
+  <!-- Device -->
+  <remove-project name="device/qcom/common" />
+  <project path="device/qcom/common" name="android_device_qcom_common" remote="neoteric" >
+    <linkfile dest="vendor/qcom/build/tasks/generate_extra_images.mk" src="generate_extra_images.mk"/>
+    <!-- add guards for CAF repositories -->
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/msm8953/Android.mk" />
+    <linkfile src="os_pickup.bp" dest="hardware/qcom-caf/msm8996/Android.bp" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/msm8996/Android.mk" />
+    <linkfile src="os_pickup.bp" dest="hardware/qcom-caf/msm8998/Android.bp" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/msm8998/Android.mk" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sdm660/Android.mk" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sdm845/Android.mk" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sm8150/Android.mk" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sm8250/Android.mk" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sm8350/Android.mk" />
+    <linkfile src="os_pickup_audio-ar.mk" dest="hardware/qcom-caf/sm8450/audio/Android.mk" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sm8450/Android.mk" />
+    <linkfile src="os_pickup_audio-ar.mk" dest="hardware/qcom-caf/sm8550/audio/Android.mk" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sm8550/Android.mk" />
+    <linkfile src="os_pickup_audio-ar.mk" dest="hardware/qcom-caf/sm8650/audio/Android.mk" />
+    <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sm8650/Android.mk" />
+  </project>
+  <remove-project name="device/qcom/sepolicy_vndr" />
+  <project path="device/qcom/sepolicy_vndr" name="android_device_qcom_sepolicy_vndr" remote="neoteric" />
+  <project path="device/neoteric/sepolicy" name="android_device_neoteric_sepolicy" remote="neoteric"/>
+
+  <!-- External -->
+  <remove-project name="platform/external/arm-optimized-routines" />
+  <project path="external/arm-optimized-routines" name="android_external_arm-optimized-routines" remote="neoteric" />
+  <remove-project name="platform/external/e2fsprogs" />
+  <project path="external/e2fsprogs" name="android_external_e2fsprogs" remote="neoteric" />
+  <remove-project name="platform/external/fastrpc" />
+  <project path="external/fastrpc" name="android_external_fastrpc" remote="neoteric" />
+  <remove-project name="platform/external/gptfdisk" />
+  <project path="external/gptfdisk" name="android_external_gptfdisk" remote="neoteric" />
+  <remove-project name="platform/external/json-c" />
+  <project path="external/json-c" name="android_external_json-c" remote="neoteric" />
+  <remove-project name="platform/external/mksh" />
+  <project path="external/mksh" name="android_external_mksh" remote="neoteric" />
+  <remove-project name="platform/external/tinycompress" />
+  <project path="external/tinycompress" name="android_external_tinycompress" remote="neoteric" />
+
+  <!-- Frameworks -->
+  <remove-project name="platform/frameworks/av" />
+  <project path="frameworks/av" name="android_frameworks_av" remote="neoteric" />
+  <remove-project name="platform/frameworks/base" />
+  <project path="frameworks/base" name="android_frameworks_base" remote="neoteric" />
+  <remove-project name="platform/frameworks/libs/systemui" />
+  <project path="frameworks/libs/systemui" name="android_frameworks_libs_systemui" remote="neoteric" />
+  <remove-project name="platform/frameworks/native" />
+  <project path="frameworks/native" name="android_frameworks_native" remote="neoteric" />
+
+  <!-- Hardware -->
+  <project path="hardware/neoteric/interfaces" name="android_hardware_neoteric_interfaces" remote="neoteric" />
+  <remove-project name="platform/hardware/libhardware" />
+  <project path="hardware/libhardware" name="android_hardware_libhardware" remote="neoteric" />
+  <remove-project name="platform/hardware/qcom/bootctrl" />
+  <project path="hardware/qcom/bootctrl" name="android_hardware_qcom_bootctrl" remote="neoteric" />
+  <remove-project name="platform/hardware/qcom/wlan" />
+  <project path="hardware/qcom/wlan" name="android_hardware_qcom_wlan" remote="neoteric" />
+
+  <!-- Hardware (Lineage) -->
+  <project path="hardware/lineage/compat" name="android_hardware_lineage_compat" remote="neoteric" />
+
+  <!-- Packages -->
+  <remove-project name="platform/packages/apps/Settings" />
+  <project path="packages/apps/Settings" name="android_packages_apps_Settings" remote="neoteric" />
+  <remove-project name="platform/packages/apps/Launcher3"/>
+  <project path="packages/apps/Launcher3" name="android_packages_apps_Launcher3" remote="neoteric" />
+  <remove-project name="platform/packages/apps/ThemePicker"/>
+  <project path="packages/apps/ThemePicker" name="android_packages_apps_ThemePicker" remote="neoteric" />
+  <remove-project name="platform/packages/services/Telecomm" />
+  <project path="packages/services/Telecomm" name="android_packages_services_Telecomm" remote="neoteric" />
+  <project path="packages/apps/ProtonWallpaperStub" name="android_packages_apps_ProtonWallpaperStub" remote="neoteric" revision="tm" />
+  <remove-project name="platform/packages/apps/WallpaperPicker2"/>
+  <project path="packages/apps/WallpaperPicker2" name="android_packages_apps_WallpaperPicker2" remote="neoteric" />
+  <project path="packages/apps/Updates" name="android_packages_apps_Updates" remote="neoteric" />
+  <project path="packages/services/SmartSpace" name="android_packages_services_SmartSpace" remote="neoteric" />
+
+  <!-- System -->
+  <remove-project name="platform/system/core" />
+  <project path="system/core" name="android_system_core" remote="neoteric" />
+  <remove-project name="platform/system/qcom" />
+  <project path="vendor/qcom/opensource/softap" name="android_system_qcom" remote="neoteric" />
+  <remove-project name="platform/system/sepolicy" />
+  <project path="system/sepolicy" name="android_system_sepolicy" remote="neoteric" />
+
+  <!-- Vendor (Neoteric) -->
+  <project path="vendor/neoteric" name="android_vendor_neoteric" remote="neoteric" />
+  <project path="vendor/neoteric_prebuilt" name="android_vendor_neoteric_prebuilt" remote="neoteric" />
+  <project path="vendor/google/gms" name="android_vendor_google_gms" remote="neoteric-gitlab" clone-depth="1" />
+  <project path="vendor/google/pixel" name="android_vendor_google_pixel" remote="neoteric" clone-depth="1" />
+  <project path="vendor/qcom/common" name="proprietary_vendor_qcom_common" remote="neoteric" />
+  <project path="vendor/qcom/sdclang" name="proprietary_vendor_qcom_sdclang" remote="blobs" revision="disabled" />
+
+  <!-- Vendor (QCOM QSSI) -->
+  <remove-project name="platform/vendor/qcom-opensource/bluetooth-commonsys-intf" />
+  <project path="vendor/qcom/opensource/commonsys-intf/bluetooth" name="android_vendor_qcom-opensource_bluetooth-commonsys-intf" remote="neoteric" />
+  <remove-project name="platform/vendor/qcom-opensource/display-commonsys-intf" />
+  <project path="vendor/qcom/opensource/commonsys-intf/display" name="android_vendor_qcom_opensource_commonsys-intf_display" remote="neoteric" >
+    <linkfile dest="vendor/qcom/defs/product-defs/system/display-product-system.mk" src="config/display-product-system.mk" />
+    <linkfile dest="vendor/qcom/defs/product-defs/vendor/display-interfaces-product.mk" src="config/display-interfaces-product.mk" />
+  </project>
+  <remove-project name="platform/vendor/qcom-opensource/display-commonsys" />
+  <project path="vendor/qcom/opensource/commonsys/display" name="android_vendor_qcom-opensource_display-commonsys" remote="neoteric" />
+
+  <!-- Vendor (QCOM Vendor) -->
+  <project path="vendor/qcom/opensource/commonsys-intf/wfd" name="android_vendor_qcom_opensource_commonsys-intf_wfd" remote="neoteric" />
+  <remove-project name="platform/vendor/qcom-opensource/data-ipa-cfg-mgr" />
+  <project path="vendor/qcom/opensource/data-ipa-cfg-mgr" name="android_vendor_qcom_opensource_data-ipa-cfg-mgr" remote="neoteric" />
+  <project path="vendor/qcom/opensource/data-ipa-cfg-mgr-legacy" name="android_vendor_qcom_opensource_data-ipa-cfg-mgr" remote="neoteric" revision="vic-legacy" />
+  <remove-project name="platform/vendor/qcom-opensource/dataservices" />
+  <project path="vendor/qcom/opensource/dataservices" name="android_vendor_qcom-opensource_dataservices" remote="neoteric" />
+  <remove-project name="platform/vendor/qcom-opensource/power" />
+  <project path="vendor/qcom/opensource/power" name="android_vendor_qcom-opensource_power" remote="neoteric" />
+  <remove-project name="platform/vendor/qcom-opensource/vibrator" />
+  <project path="vendor/qcom/opensource/vibrator" name="android_vendor_qcom-opensource_vibrator" remote="neoteric" />
+  <remove-project name="platform/vendor/qcom-opensource/usb" />
+  <project path="vendor/qcom/opensource/usb" name="android_vendor_qcom-opensource_usb" remote="neoteric" />
+
+  <!-- OTA -->
+  <project path="ota" name="OTA" remote="neoteric" revision="3.0" />
+</manifest>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <!-- AOSP -->
+  <remote name="aosp"
+          fetch="https://android.googlesource.com"
+          sync-c="true"
+          sync-tags="false"
+          review="https://android-review.googlesource.com/"
+          revision="refs/tags/android-15.0.0_r1" />
+
+  <!-- CLO -->
+  <remote name="clo-la"
+          fetch="https://git.codelinaro.org/clo/la"
+          sync-c="true"
+          sync-tags="false" />
+
+  <default remote="clo-la"/>
+
+  <include name="system.xml"/>
+  <include name="vendor.xml"/>
+
+  <!-- AOSPA -->
+  <remote  name="aospa"
+           fetch=".."
+           review="gerrit.aospa.co"
+           revision="vauxite"/>
+
+  <remote  name="bitbucket"
+           fetch="https://bitbucket.org"
+           revision="vauxite" />
+
+  <remote  name="blobs"
+           fetch="https://github.com/ThankYouMario"
+           revision="vauxite" />
+
+  <remote  name="blobs-gitlab"
+           fetch="https://gitlab.com/ThankYouMario"
+           revision="vauxite" />
+
+  <!-- Git -->
+  <remote  name="github"
+           fetch="https://github.com" />
+
+  <remote  name="github-ssh"
+           fetch="ssh://git@github.com" />
+
+  <remote  name="gitlab"
+           fetch="https://gitlab.com" />
+
+  <!-- Remove extraneous projects -->
+  <include name="obsolete.xml"/>
+
+  <!-- Lineage -->
+  <include name="lineage.xml"/>
+
+  <!-- Neoteric -->
+  <remote  name="neoteric"
+           fetch="https://github.com/Neoteric-OS"
+           revision="refs/heads/vic" />
+
+  <remote  name="neoteric-gitlab"
+           fetch="https://gitlab.com/neoteric-os"
+           revision="vic" />
+
+  <include name="neoteric.xml"/>
+
+</manifest>
