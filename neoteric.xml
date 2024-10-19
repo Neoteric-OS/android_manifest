@@ -154,4 +154,7 @@
 
   <!-- OTA -->
   <project path="ota" name="OTA" remote="neoteric" revision="3.0" />
+
+  <!-- Sign keys -->
+  <project path="certs" name="certs" remote="neoteric" />
 </manifest>
