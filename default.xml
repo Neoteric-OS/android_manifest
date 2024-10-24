@@ -38,6 +38,8 @@
            fetch="https://gitlab.com/ThankYouMario"
            revision="vauxite" />
 
+  <include name="aospa.xml"/>
+
   <!-- Git -->
   <remote  name="github"
            fetch="https://github.com" />
