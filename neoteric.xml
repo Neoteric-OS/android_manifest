@@ -83,7 +83,8 @@
   <project path="frameworks/native" name="android_frameworks_native" remote="neoteric" />
 
   <!-- Hardware -->
-  <project path="hardware/neoteric/interfaces" name="android_hardware_neoteric_interfaces" remote="neoteric" />
+  <remove-project name="platform/hardware/interfaces" />
+  <project path="hardware/interfaces" name="android_hardware_interfaces" remote="neoteric" />
   <remove-project name="platform/hardware/libhardware" />
   <project path="hardware/libhardware" name="android_hardware_libhardware" remote="neoteric" />
   <remove-project name="platform/hardware/qcom/bootctrl" />
@@ -93,6 +94,9 @@
 
   <!-- Hardware (Lineage) -->
   <project path="hardware/lineage/compat" name="android_hardware_lineage_compat" remote="neoteric" />
+
+  <!-- Hardware (Neoteric) -->
+  <project path="hardware/neoteric/interfaces" name="android_hardware_neoteric_interfaces" remote="neoteric" />
 
   <!-- Packages -->
   <remove-project name="platform/packages/apps/Settings" />
