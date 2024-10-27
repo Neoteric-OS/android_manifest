@@ -123,6 +123,10 @@
   <remove-project name="platform/system/sepolicy" />
   <project path="system/sepolicy" name="android_system_sepolicy" remote="neoteric" />
 
+  <!-- Tools -->
+  <project path="prebuilts/extract-tools" name="android_prebuilts_extract-tools" remote="neoteric" />
+  <project path="tools/extract-utils" name="android_tools_extract-utils" remote="neoteric" />
+
   <!-- Vendor (Neoteric) -->
   <project path="vendor/neoteric" name="android_vendor_neoteric" remote="neoteric" />
   <project path="vendor/neoteric_prebuilt" name="android_vendor_neoteric_prebuilt" remote="neoteric" />

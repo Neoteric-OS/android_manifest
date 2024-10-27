@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<manifest>
- 
-    <!-- Tools -->
-    <project path="tools/extract-utils" name="AOSPA/android_tools_extract-utils" remote="aospa" />
-
-</manifest>
