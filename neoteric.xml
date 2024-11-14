@@ -113,6 +113,7 @@
   <remove-project name="platform/packages/modules/Bluetooth" />
   <project path="packages/modules/Bluetooth" name="android_packages_modules_Bluetooth" remote="neoteric" />
   <project path="packages/services/SmartSpace" name="android_packages_services_SmartSpace" remote="neoteric" />
+  <project path="packages/apps/TouchGestures" name="android_packages_apps_TouchGestures" remote="neoteric" />
 
   <!-- System -->
   <remove-project name="platform/system/core" />
