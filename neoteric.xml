@@ -116,6 +116,8 @@
   <project path="packages/apps/TouchGestures" name="android_packages_apps_TouchGestures" remote="neoteric" />
   <project path="packages/apps/GameSpace" name="android_packages_apps_GameSpace" remote="neoteric" />
   <project path="packages/apps/ParanoidSense" name="android_packages_apps_ParanoidSense" remote="neoteric" />
+  <remove-project name="platform/packages/modules/Connectivity" />
+  <project path="packages/modules/Connectivity" name="android_packages_modules_Connectivity" remote="neoteric" />
 
   <!-- System -->
   <remove-project name="platform/system/core" />
@@ -124,6 +126,8 @@
   <project path="vendor/qcom/opensource/softap" name="android_system_qcom" remote="neoteric" />
   <remove-project name="platform/system/sepolicy" />
   <project path="system/sepolicy" name="android_system_sepolicy" remote="neoteric" />
+  <remove-project name="platform/system/netd" />
+  <project path="system/netd" name="android_system_netd" remote="neoteric" />
 
   <!-- Tools -->
   <project path="prebuilts/extract-tools" name="android_prebuilts_extract-tools" remote="neoteric" />
