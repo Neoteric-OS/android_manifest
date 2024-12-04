@@ -4,7 +4,7 @@
   <remote  name="lineage"
            fetch="https://github.com/LineageOS"
            review="https://review.lineageos.org/"
-           revision="refs/heads/lineage-21.0" />
+           revision="refs/heads/lineage-22.0" />
 
   <!-- Packages -->
   <project path="packages/apps/Aperture" name="android_packages_apps_Aperture" remote="lineage" />
@@ -18,5 +18,9 @@
   <project path="prebuilts/tools-lineage" name="android_prebuilts_tools-lineage" remote="lineage" clone-depth="1" />
   <remove-project name="platform/external/dtc" />
   <project path="external/dtc" name="android_external_dtc" groups="pdk" remote="lineage" clone-depth="1" />
+
+  <!-- SEPolicy -->
+  <project path="device/qcom/sepolicy_vndr/legacy-um" name="android_device_qcom_sepolicy_vndr" remote="lineage" revision="lineage-22.0-legacy-um" />
+  <project path="device/qcom/sepolicy_vndr/sm8550" name="android_device_qcom_sepolicy_vndr" remote="lineage" revision="lineage-22.0-caf-sm8550" />
 
 </manifest>

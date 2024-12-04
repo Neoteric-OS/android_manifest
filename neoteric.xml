@@ -32,9 +32,11 @@
 
   <!-- Device -->
   <remove-project name="device/qcom/common" />
+  <remove-project name="device/qcom/sepolicy_vndr" />
   <project path="device/qcom/common" name="android_device_qcom_common" remote="neoteric" >
     <linkfile dest="vendor/qcom/build/tasks/generate_extra_images.mk" src="generate_extra_images.mk"/>
     <!-- add guards for CAF repositories -->
+    <linkfile src="os_pickup_sepolicy_vndr.mk" dest="device/qcom/sepolicy_vndr/SEPolicy.mk" />
     <linkfile src="os_pickup.bp" dest="hardware/qcom-caf/msm8996/Android.bp" />
     <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/msm8996/Android.mk" />
     <linkfile src="os_pickup.bp" dest="hardware/qcom-caf/msm8998/Android.bp" />
@@ -51,8 +53,7 @@
     <linkfile src="os_pickup_audio-ar.mk" dest="hardware/qcom-caf/sm8650/audio/Android.mk" />
     <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sm8650/Android.mk" />
   </project>
-  <remove-project name="device/qcom/sepolicy_vndr" />
-  <project path="device/qcom/sepolicy_vndr" name="android_device_qcom_sepolicy_vndr" remote="neoteric" />
+  <project path="device/qcom/sepolicy_vndr/sm8450" name="android_device_qcom_sepolicy_vndr" remote="neoteric" revision="vic-8450" />
   <project path="device/neoteric/sepolicy" name="android_device_neoteric_sepolicy" remote="neoteric"/>
 
   <!-- External -->
