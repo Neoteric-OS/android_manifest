@@ -53,6 +53,7 @@
     <linkfile src="os_pickup_audio-ar.mk" dest="hardware/qcom-caf/sm8650/audio/Android.mk" />
     <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sm8650/Android.mk" />
   </project>
+  <project path="device/qcom/sepolicy" name="android_device_qcom_sepolicy" remote="neoteric" revision="vic" />
   <project path="device/qcom/sepolicy_vndr/sm8450" name="android_device_qcom_sepolicy_vndr" remote="neoteric" revision="vic-8450" />
   <project path="device/qcom/sepolicy_vndr/sm8550" name="android_device_qcom_sepolicy_vndr" remote="neoteric" revision="vic-8550" />
   <project path="device/neoteric/sepolicy" name="android_device_neoteric_sepolicy" remote="neoteric"/>
