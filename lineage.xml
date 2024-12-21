@@ -19,7 +19,4 @@
   <remove-project name="platform/external/dtc" />
   <project path="external/dtc" name="android_external_dtc" groups="pdk" remote="lineage" clone-depth="1" />
 
-  <!-- SEPolicy -->
-  <project path="device/qcom/sepolicy_vndr/legacy-um" name="android_device_qcom_sepolicy_vndr" remote="lineage" revision="lineage-22.0-legacy-um" />
-
 </manifest>
