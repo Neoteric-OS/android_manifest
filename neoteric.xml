@@ -72,6 +72,8 @@
   <project path="external/jemalloc_new" name="android_external_jemalloc-new" remote="neoteric" />
   <remove-project name="platform/external/json-c" />
   <project path="external/json-c" name="android_external_json-c" remote="neoteric" />
+  <remove-project name="platform/external/libjpeg-turbo" />
+  <project path="external/libjpeg-turbo" name="android_external_libjpeg-turbo" remote="neoteric" />
   <remove-project name="platform/external/mksh" />
   <project path="external/mksh" name="android_external_mksh" remote="neoteric" />
   <remove-project name="platform/external/tinycompress" />
@@ -140,6 +142,10 @@
   <!-- Tools -->
   <project path="prebuilts/extract-tools" name="android_prebuilts_extract-tools" remote="neoteric" />
   <project path="tools/extract-utils" name="android_tools_extract-utils" remote="neoteric" />
+
+  <!-- Toolchain -->
+  <remove-project name="toolchain/pgo-profiles" />
+  <project path="toolchain/pgo-profiles" name="android_toolchain_pgo-profiles" remote="neoteric" />
 
   <!-- Vendor (Neoteric) -->
   <project path="vendor/neoteric" name="android_vendor_neoteric" remote="neoteric" />
