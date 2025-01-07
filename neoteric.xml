@@ -107,6 +107,8 @@
   <project path="hardware/libhardware" name="android_hardware_libhardware" remote="neoteric" />
   <remove-project name="platform/hardware/qcom/bootctrl" />
   <project path="hardware/qcom/bootctrl" name="android_hardware_qcom_bootctrl" remote="neoteric" />
+  <remove-project name="platform/hardware/qcom/thermal" />
+  <project path="vendor/qcom/opensource/thermal-hal" name="android_hardware_qcom_thermal" remote="neoteric" />
   <remove-project name="platform/hardware/qcom/wlan" />
   <project path="hardware/qcom/wlan" name="android_hardware_qcom_wlan" remote="neoteric" />
 
