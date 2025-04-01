@@ -168,6 +168,7 @@
   <project path="vendor/qcom/sdclang" name="proprietary_vendor_qcom_sdclang" remote="blobs" revision="disabled" />
   <project path="vendor/themes" name="android_vendor_themes" remote="neoteric" />
   <project path="vendor/preferences" name="android_vendor_preferences" remote="neoteric" />
+  <project path="vendor/gms_spoof" name="android_vendor_gms_spoof" remote="neoteric" revision="master" />
 
   <!-- Vendor (QCOM QSSI) -->
   <remove-project name="platform/vendor/qcom-opensource/bluetooth-commonsys-intf" />
