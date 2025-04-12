@@ -142,6 +142,8 @@
   <project path="packages/apps/aptxacu" name="android_packages_apps_aptxacu" remote="neoteric" />
 
   <!-- System -->
+  <remove-project name="platform/system/memory/lmkd" />
+  <project path="system/memory/lmkd" name="android_system_memory_lmkd" remote="neoteric" />
   <remove-project name="platform/system/core" />
   <project path="system/core" name="android_system_core" remote="neoteric" />
   <remove-project name="platform/system/qcom" />
