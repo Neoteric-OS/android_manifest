@@ -7,7 +7,7 @@
           sync-c="true"
           sync-tags="false"
           review="https://android-review.googlesource.com/"
-          revision="refs/tags/android-15.0.0_r1" />
+          revision="refs/tags/android-16.0.0_r1" />
 
   <!-- CLO -->
   <remote name="clo-la"
@@ -48,21 +48,31 @@
   <remote  name="gitlab"
            fetch="https://gitlab.com" />
 
-  <!-- Remove extraneous projects -->
-  <include name="obsolete.xml"/>
-
   <!-- Lineage -->
+  <remote  name="lineage"
+           fetch="https://github.com/LineageOS"
+           review="https://review.lineageos.org/"
+           revision="refs/heads/lineage-22.2" />
+
   <include name="lineage.xml"/>
 
   <!-- Neoteric -->
   <remote  name="neoteric"
            fetch="https://github.com/Neoteric-OS"
-           revision="refs/heads/vic" />
+           revision="refs/heads/bka" />
 
   <remote  name="neoteric-gitlab"
            fetch="https://gitlab.com/neoteric-os"
-           revision="vic" />
+           revision="bka" />
 
   <include name="neoteric.xml"/>
+
+  <!-- Gitea -->
+  <remote  name="statix-gitea"
+           fetch="https://git.keksla.wtf/StatiXOS"
+           revision="refs/heads/bp2a" />
+
+  <!-- Remove extraneous projects -->
+  <include name="obsolete.xml"/>
 
 </manifest>
