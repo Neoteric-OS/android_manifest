@@ -65,12 +65,11 @@
            fetch="https://gitlab.com/neoteric-os"
            revision="bka" />
 
-  <include name="neoteric.xml"/>
+  <remote  name="neoteric-gitea"
+           fetch="https://gitea.com/Neoteric-OS"
+           revision="refs/heads/bka" /> 
 
-  <!-- Gitea -->
-  <remote  name="statix-gitea"
-           fetch="https://git.keksla.wtf/StatiXOS"
-           revision="refs/heads/bp2a" />
+  <include name="neoteric.xml"/>
 
   <!-- Remove extraneous projects -->
   <include name="obsolete.xml"/>

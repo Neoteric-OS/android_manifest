@@ -153,7 +153,7 @@
   <!-- Vendor (Neoteric) -->
   <project path="vendor/neoteric" name="android_vendor_neoteric" remote="neoteric" />
   <project path="vendor/neoteric_prebuilt" name="android_vendor_neoteric_prebuilt" remote="neoteric" />
-  <project path="vendor/gms" name="google-mobile-services" remote="statix-gitea" clone-depth="1" />
+  <project path="vendor/gms" name="android_vendor_gms" remote="neoteric-gitea" clone-depth="1" />
   <project path="vendor/qcom/common" name="proprietary_vendor_qcom_common" remote="neoteric" />
   <project path="vendor/qcom/sdclang" name="proprietary_vendor_qcom_sdclang" remote="blobs" revision="disabled" />
   <project path="vendor/themes" name="android_vendor_themes" remote="neoteric" />
