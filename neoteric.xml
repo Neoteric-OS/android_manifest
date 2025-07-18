@@ -11,8 +11,6 @@
     <linkfile src="target" dest="build/target" />
     <linkfile src="tools" dest="build/tools" />
   </project>
-  <remove-project name="platform/build/release" />
-  <project path="build/release" name="android_build_release" remote="neoteric" />
   <remove-project name="platform/build/soong" />
   <project path="build/soong" name="android_build_soong" remote="neoteric" >
     <linkfile src="root.bp" dest="Android.bp" />
