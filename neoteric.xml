@@ -59,6 +59,8 @@
     <linkfile src="os_pickup.mk" dest="hardware/qcom-caf/sm8650/Android.mk" />
     <linkfile src="os_pickup.bp" dest="hardware/qcom-caf/sm8650/Android.bp" />
   </project>
+  <remove-project name="device/qcom/sepolicy"/>
+  <project path="device/qcom/sepolicy" name="android_device_qcom_sepolicy" remote="neoteric" revision="bka" />
   <project path="device/qcom/sepolicy_vndr/sm8450" name="android_device_qcom_sepolicy_vndr" remote="neoteric" revision="bka-8450" />
   <project path="device/qcom/sepolicy_vndr/sm8550" name="android_device_qcom_sepolicy_vndr" remote="neoteric" revision="bka-8550" />
   <project path="device/qcom/sepolicy_vndr/sm8650" name="android_device_qcom_sepolicy_vndr" remote="neoteric" revision="bka-8650" />
