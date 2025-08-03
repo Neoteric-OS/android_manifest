@@ -70,6 +70,7 @@
            revision="refs/heads/bka" /> 
 
   <include name="neoteric.xml"/>
+  <include name="internal.xml" groups="internal" />
 
   <!-- Remove extraneous projects -->
   <include name="obsolete.xml"/>
