@@ -186,10 +186,4 @@
   <project path="vendor/qcom/opensource/vibrator" name="android_vendor_qcom-opensource_vibrator" remote="neoteric" />
   <remove-project name="platform/vendor/qcom-opensource/usb" />
   <project path="vendor/qcom/opensource/usb" name="android_vendor_qcom-opensource_usb" remote="neoteric" />
-
-  <!-- OTA -->
-  <project path="ota" name="OTA" remote="neoteric" revision="4.0" />
-
-  <!-- Sign keys -->
-  <project path="certs" name="certs" remote="neoteric" />
 </manifest>
