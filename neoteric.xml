@@ -188,8 +188,8 @@
   <project path="vendor/qcom/opensource/usb" name="android_vendor_qcom-opensource_usb" remote="neoteric" />
 
   <!-- OTA -->
-  <project path="ota" name="OTA" remote="neoteric" revision="4.0" />
+  <project path="ota" name="OTA" remote="neoteric" revision="4.0" groups="internal" />
 
   <!-- Sign keys -->
-  <project path="certs" name="certs" remote="neoteric" />
+  <project path="certs" name="certs" remote="neoteric" groups="internal"/>
 </manifest>
