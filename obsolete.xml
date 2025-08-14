@@ -89,5 +89,6 @@
   <remove-project name="platform/vendor/st/opensource/eSE-driver" />
   <remove-project name="platform/vendor/st/opensource/halimpl" />
   <remove-project name="platform/vendor/st/opensource/keymaster" />
+  <remove-project name="platform/vendor/qcom-opensource/crosvm-gunyah" />
 
 </manifest>
