@@ -76,8 +76,12 @@
   <project path="external/mksh" name="android_external_mksh" remote="neoteric" />
 
   <!-- External -->
+  <remove-project name="platform/external/arm-optimized-routines" />
+  <project path="external/arm-optimized-routines" name="android_external_arm-optimized-routines" remote="neoteric" />
   <remove-project name="platform/external/fastrpc" />
   <project path="external/fastrpc" name="android_external_fastrpc" remote="neoteric" />
+  <remove-project name="platform/external/jemalloc_new" />
+  <project path="external/jemalloc_new" name="android_external_jemalloc-new" remote="neoteric" />
   <remove-project name="platform/external/json-c" />
   <project path="external/json-c" name="android_external_json-c" remote="neoteric" />
   <remove-project name="platform/external/tinycompress" />
