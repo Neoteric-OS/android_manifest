@@ -65,8 +65,8 @@
            fetch="https://gitlab.com/neoteric-os"
            revision="bka" />
 
-  <remote  name="neoteric-gitea"
-           fetch="https://gitea.com/Neoteric-OS"
+  <remote  name="neoteric-codeberg"
+           fetch="https://codeberg.org/Neoteric-OS/"
            revision="refs/heads/bka" /> 
 
   <include name="neoteric.xml"/>
