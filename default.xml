@@ -20,22 +20,9 @@
   <include name="system.xml"/>
   <include name="vendor.xml"/>
 
-  <!-- AOSPA -->
-  <remote  name="aospa"
-           fetch=".."
-           review="gerrit.aospa.co"
-           revision="vauxite"/>
-
-  <remote  name="bitbucket"
-           fetch="https://bitbucket.org"
-           revision="vauxite" />
-
-  <remote  name="blobs"
+  <!-- SDCLANG -->
+  <remote  name="sdclang"
            fetch="https://github.com/ThankYouMario"
-           revision="vauxite" />
-
-  <remote  name="blobs-gitlab"
-           fetch="https://gitlab.com/ThankYouMario"
            revision="vauxite" />
 
   <!-- Git -->

@@ -165,7 +165,7 @@
   <project path="vendor/neoteric_prebuilt" name="android_vendor_neoteric_prebuilt" remote="neoteric" />
   <project path="vendor/gms" name="android_vendor_gms" remote="neoteric-codeberg" clone-depth="1" />
   <project path="vendor/qcom/common" name="proprietary_vendor_qcom_common" remote="neoteric" />
-  <project path="vendor/qcom/sdclang" name="proprietary_vendor_qcom_sdclang" remote="blobs" revision="disabled" />
+  <project path="vendor/qcom/sdclang" name="proprietary_vendor_qcom_sdclang" remote="sdclang" revision="disabled" />
   <project path="vendor/themes" name="android_vendor_themes" remote="neoteric" />
   <project path="vendor/preferences" name="android_vendor_preferences" remote="neoteric" />
   <project path="vendor/gms_spoof" name="android_vendor_gms_spoof" remote="neoteric" revision="master" />
