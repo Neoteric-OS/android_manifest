@@ -151,6 +151,8 @@
   <!-- System -->
   <remove-project name="platform/system/memory/lmkd" />
   <project path="system/memory/lmkd" name="android_system_memory_lmkd" remote="neoteric" />
+  <remove-project name="platform/system/bpf" />
+  <project path="system/bpf" name="android_system_bpf" remote="neoteric" />
   <remove-project name="platform/system/core" />
   <project path="system/core" name="android_system_core" remote="neoteric" />
   <remove-project name="platform/system/sepolicy" />
