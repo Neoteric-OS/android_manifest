@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
+  <!-- Bootable -->
+  <project path="bootable/deprecated-ota" name="android_bootable_deprecated-ota" remote="lineage" />
 
   <!-- Packages -->
-  <project path="packages/apps/Aperture" name="android_packages_apps_Aperture" remote="lineage" />
+  <project path="packages/apps/Aperture" name="android_packages_apps_Aperture" remote="lineage" revision="lineage-23.2" />
   <remove-project name="platform/packages/services/DeviceAsWebcam" />
   <project path="packages/services/DeviceAsWebcam" name="android_packages_services_DeviceAsWebcam" remote="lineage" />
   
@@ -15,6 +17,10 @@
   <project path="prebuilts/tools-lineage" name="android_prebuilts_tools-lineage" remote="lineage" clone-depth="1" />
   <remove-project name="platform/external/dtc" />
   <project path="external/dtc" name="android_external_dtc" groups="pdk" remote="lineage" clone-depth="1" />
-  <project path="packages/resources/devicesettings" name="android_packages_resources_devicesettings" remote="lineage" />
+  <project path="packages/resources/devicesettings" name="android_packages_resources_devicesettings" remote="lineage" revision="lineage-23.2" />
+
+  <!-- Vendor -->
+  <project path="vendor/qcom/opensource/libvmmem" name="android_vendor_qcom_opensource_libvmmem" remote="lineage" />
+  <project path="vendor/qcom/opensource/libqspa" name="android_vendor_qcom_opensource_libqspa" remote="lineage" />
 
 </manifest>
