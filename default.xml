@@ -7,7 +7,7 @@
           sync-c="true"
           sync-tags="false"
           review="https://android-review.googlesource.com/"
-          revision="refs/tags/android-16.0.0_r1" />
+          revision="refs/tags/android-17.0.0_r1" />
 
   <!-- CLO -->
   <remote name="clo-la"
@@ -39,14 +39,14 @@
   <remote  name="lineage"
            fetch="https://github.com/LineageOS"
            review="https://review.lineageos.org/"
-           revision="refs/heads/lineage-22.2" />
+           revision="refs/heads/lineage-24.0" />
 
   <include name="lineage.xml"/>
 
   <!-- Neoteric -->
   <remote  name="neoteric"
            fetch="https://github.com/Neoteric-OS"
-           revision="refs/heads/bka" />
+           revision="refs/heads/cnb" />
 
   <remote  name="neoteric-gitlab"
            fetch="https://gitlab.com/neoteric-os"
