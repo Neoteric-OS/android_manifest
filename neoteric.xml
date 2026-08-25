@@ -70,6 +70,7 @@
   <remove-project name="platform/external/gptfdisk" />
   <project path="external/gptfdisk" name="android_external_gptfdisk" remote="neoteric" />
   <remove-project name="platform/external/libjxl" />
+  <project path="external/json-c" name="android_external_json-c" remote="neoteric" />
   <project path="external/libjxl" name="android_external_libjxl" remote="neoteric" />
   <remove-project name="platform/external/mksh" />
   <project path="external/mksh" name="android_external_mksh" remote="neoteric" />
@@ -89,6 +90,8 @@
 
   <!-- Hardware (Neoteric) -->
   <project path="hardware/neoteric/interfaces" name="android_hardware_neoteric_interfaces" remote="neoteric" />
+  <remove-project name="platform/hardware/nxp/nfc" />
+  <project path="hardware/nxp/nfc" name="android_hardware_nxp_nfc" remote="neoteric" />
   <remove-project name="platform/hardware/qcom/wlan" />
   <project path="hardware/qcom/wlan" name="android_hardware_qcom_wlan" remote="neoteric" />
 
