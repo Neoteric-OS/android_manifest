@@ -55,7 +55,7 @@
 
   <remote  name="neoteric-codeberg"
            fetch="https://codeberg.org/Neoteric-OS/"
-           revision="refs/heads/bka" /> 
+           revision="refs/heads/cnb" /> 
 
   <include name="neoteric.xml"/>
   <include name="internal.xml" />
