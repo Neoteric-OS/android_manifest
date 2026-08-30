@@ -78,8 +78,12 @@
   <!-- External -->
   <remove-project name="platform/external/libchrome-gestures" />
   <project path="external/libchrome-gestures" name="android_external_libchrome-gestures" remote="neoteric" />
+  <remove-project name="platform/external/tinycompress" />
+  <project path="external/tinycompress" name="android_external_tinycompress" remote="neoteric" />
 
   <!-- Frameworks -->
+  <remove-project name="platform/frameworks/av" />
+  <project path="frameworks/av" name="android_frameworks_av" remote="neoteric" />
   <remove-project name="platform/frameworks/base" />
   <project path="frameworks/base" name="android_frameworks_base" remote="neoteric" />
   <remove-project name="platform/frameworks/native" />
@@ -96,6 +100,8 @@
   <project path="hardware/qcom/wlan" name="android_hardware_qcom_wlan" remote="neoteric" />
 
   <!-- Packages -->
+  <remove-project name="platform/packages/apps/Launcher3"/>
+  <project path="packages/apps/Launcher3" name="android_packages_apps_Launcher3" remote="neoteric" />
   <project path="packages/services/SmartSpace" name="android_packages_services_SmartSpace" remote="neoteric" />
   <project path="packages/apps/TouchGestures" name="android_packages_apps_TouchGestures" remote="neoteric" />
   <project path="packages/apps/GameSpace" name="android_packages_apps_GameSpace" remote="neoteric" />
