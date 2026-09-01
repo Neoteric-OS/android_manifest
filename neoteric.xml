@@ -21,6 +21,10 @@
     <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
   </project>
 
+  <!-- Core -->
+  <remove-project name="platform/bionic" />
+  <project path="bionic" name="android_bionic" remote="neoteric" />
+
   <!-- Device -->
   <remove-project name="device/qcom/common" />
   <remove-project name="device/qcom/sepolicy_vndr" />
@@ -76,6 +80,8 @@
   <project path="external/mksh" name="android_external_mksh" remote="neoteric" />
 
   <!-- External -->
+  <remove-project name="platform/external/jemalloc_new" />
+  <project path="external/jemalloc_new" name="android_external_jemalloc-new" remote="neoteric" />
   <remove-project name="platform/external/libchrome-gestures" />
   <project path="external/libchrome-gestures" name="android_external_libchrome-gestures" remote="neoteric" />
   <remove-project name="platform/external/tinycompress" />
