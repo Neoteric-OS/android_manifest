@@ -143,6 +143,8 @@
   <project path="vendor/gms_spoof" name="android_vendor_gms_spoof" remote="neoteric" revision="master" />
 
   <!-- Vendor (QCOM Vendor) -->
+  <remove-project name="platform/vendor/qcom-opensource/bluetooth" />
+  <project path="vendor/qcom/opensource/commonsys/bluetooth" name="android_vendor_qcom-opensource_bluetooth-commonsys" remote="neoteric" />
   <remove-project name="platform/vendor/qcom-opensource/healthd-ext" />
   <project path="vendor/qcom/opensource/healthd-ext" name="android_vendor_qcom_opensource_healthd-ext" remote="neoteric" />
   <remove-project name="platform/vendor/qcom-opensource/data-ipa-cfg-mgr" />
