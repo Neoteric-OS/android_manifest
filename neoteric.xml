@@ -110,6 +110,10 @@
   <!-- Packages -->
   <remove-project name="platform/packages/apps/Launcher3"/>
   <project path="packages/apps/Launcher3" name="android_packages_apps_Launcher3" remote="neoteric" />
+  <remove-project name="platform/packages/apps/ThemePicker"/>
+  <project path="packages/apps/ThemePicker" name="android_packages_apps_ThemePicker" remote="neoteric" />
+
+  <!-- Neoteric packages -->
   <project path="packages/apps/TouchGestures" name="android_packages_apps_TouchGestures" remote="neoteric" />
   <project path="packages/apps/GameSpace" name="android_packages_apps_GameSpace" remote="neoteric" />
   <project path="packages/apps/ParanoidSense" name="android_packages_apps_ParanoidSense" remote="neoteric" />
