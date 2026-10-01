@@ -114,6 +114,8 @@
   <project path="packages/apps/Launcher3" name="android_packages_apps_Launcher3" remote="neoteric" />
   <remove-project name="platform/packages/apps/ThemePicker"/>
   <project path="packages/apps/ThemePicker" name="android_packages_apps_ThemePicker" remote="neoteric" />
+  <remove-project name="platform/packages/modules/Bluetooth" />
+  <project path="packages/modules/Bluetooth" name="android_packages_modules_Bluetooth" remote="neoteric" />
 
   <!-- Neoteric packages -->
   <project path="packages/apps/TouchGestures" name="android_packages_apps_TouchGestures" remote="neoteric" />
