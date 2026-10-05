@@ -22,6 +22,8 @@
   </project>
 
   <!-- Core -->
+  <remove-project name="platform/art" />
+  <project path="art" name="android_art" remote="neoteric" />
   <remove-project name="platform/bionic" />
   <project path="bionic" name="android_bionic" remote="neoteric" />
 
