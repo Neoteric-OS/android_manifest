@@ -126,6 +126,7 @@
   <project path="packages/apps/GameSpace" name="android_packages_apps_GameSpace" remote="neoteric" />
   <project path="packages/apps/ParanoidSense" name="android_packages_apps_ParanoidSense" remote="neoteric" />
   <project path="packages/apps/aptxacu" name="android_packages_apps_aptxacu" remote="neoteric" />
+  <project path="packages/apps/Updates" name="android_packages_apps_Updates" remote="neoteric" />
 
   <!-- System -->
   <remove-project name="platform/system/fs/fs_mgr" />
