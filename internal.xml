@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   <!-- OTA -->
-  <project path="ota" name="OTA" remote="neoteric" revision="4.0" groups="notdefault" />
+  <project path="ota" name="OTA" remote="neoteric" revision="5.0" groups="notdefault" />
 
   <!-- Sign keys -->
   <project path="certs" name="certs" remote="neoteric" groups="notdefault" />
