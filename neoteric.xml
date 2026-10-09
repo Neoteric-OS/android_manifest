@@ -139,6 +139,8 @@
   <project path="system/memory/libion" name="android_system_memory_libion" remote="neoteric" />
   <remove-project name="platform/system/memory/libdmabufheap" />
   <project path="system/memory/libdmabufheap" name="android_system_memory_libdmabufheap" remote="neoteric" />
+  <remove-project name="platform/system/security" />
+  <project path="system/security" name="android_system_security" remote="neoteric" />
 
   <!-- Tools -->
   <project path="prebuilts/extract-tools" name="android_prebuilts_extract-tools" remote="neoteric" />
